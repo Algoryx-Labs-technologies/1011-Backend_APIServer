@@ -2,11 +2,11 @@
  * Margin Calculator Routes
  * Handles AngelOne margin calculator endpoints
  */
-import { Router, Request, Response } from 'express';
+import { Router, IRouter, Request, Response } from 'express';
 import { angelOneService } from '../services/angelone.service';
 import { MarginCalculatorRequest, MarginCalculatorPosition } from '../types/angelone.types';
 
-const router = Router();
+const router: IRouter = Router();
 
 /**
  * POST /api/margin/calculate

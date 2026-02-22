@@ -2,11 +2,11 @@
  * Authentication Routes
  * Handles AngelOne authentication endpoints
  */
-import { Router, Request, Response } from 'express';
+import { Router, IRouter, Request, Response } from 'express';
 import { angelOneService } from '../services/angelone.service';
 import { LoginRequest, GenerateTokenRequest } from '../types/angelone.types';
 
-const router = Router();
+const router: IRouter = Router();
 
 /**
  * POST /api/auth/login

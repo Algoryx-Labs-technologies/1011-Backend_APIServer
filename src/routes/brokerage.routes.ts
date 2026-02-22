@@ -2,11 +2,11 @@
  * Brokerage Routes
  * Handles AngelOne brokerage calculator endpoints
  */
-import { Router, Request, Response } from 'express';
+import { Router, IRouter, Request, Response } from 'express';
 import { angelOneService } from '../services/angelone.service';
 import { BrokerageCalculatorRequest } from '../types/angelone.types';
 
-const router = Router();
+const router: IRouter = Router();
 
 /**
  * POST /api/brokerage/estimate-charges

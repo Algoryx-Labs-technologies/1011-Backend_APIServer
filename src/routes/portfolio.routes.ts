@@ -2,11 +2,11 @@
  * Portfolio Routes
  * Handles AngelOne portfolio endpoints
  */
-import { Router, Request, Response } from 'express';
+import { Router, IRouter, Request, Response } from 'express';
 import { angelOneService } from '../services/angelone.service';
 import { ConvertPositionRequest } from '../types/angelone.types';
 
-const router = Router();
+const router: IRouter = Router();
 
 /**
  * GET /api/portfolio/holding
